@@ -27,9 +27,11 @@ jobs:
           pip install flake8 pytest
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       
-      - name: Set PYTHONPATH
-        run: echo "PYTHONPATH=$(pwd)/src" >> $GITHUB_ENV
-      
+      - name: Set PYTHONPATH to include src
+        run: |
+            echo "PYTHONPATH=$(pwd)/src" >> $GITHUB_ENV
+            echo "Current PYTHONPATH: $PYTHONPATH"
+        
       - name: Lint with flake8
         run: |
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics

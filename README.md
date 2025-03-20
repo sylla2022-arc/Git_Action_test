@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with GitHub Actions
 
 GitHub Actions is a powerful tool for automating software workflows directly in your GitHub repository. It allows you to build, test, and deploy your code right from GitHub.
@@ -52,3 +53,6 @@ After pushing your changes, you can monitor the progress of your workflow:
 GitHub Actions simplifies the process of automating your development workflows. By following the steps above, you can set up your first GitHub Action and start automating tasks in your repository.
 
 For more information, refer to the [GitHub Actions documentation](https://docs.github.com/en/actions).
+=======
+# Git_Action_test
+>>>>>>> ac850ec3e9e21fc79c4752a25c178b975e883e32
